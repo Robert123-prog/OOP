@@ -1,0 +1,3 @@
+C:/Proiecte/Proiecte faculta/CPP-sem2/SDA/Lab/Laborator1/Set/cmake-build-debug/CMakeFiles/Set.dir
+C:/Proiecte/Proiecte faculta/CPP-sem2/SDA/Lab/Laborator1/Set/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Proiecte/Proiecte faculta/CPP-sem2/SDA/Lab/Laborator1/Set/cmake-build-debug/CMakeFiles/rebuild_cache.dir
