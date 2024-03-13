@@ -12,6 +12,8 @@ private:
 
 	//TODO - Representation
 
+    int idx;
+
 public:
 	void first();
 	void next();
