@@ -12,9 +12,10 @@ class Set {
 
     private:
 		//TODO - Representation
-        bool* bitarray;
+        bool* bitArray;
         int capacity;
-        int min, max;
+        int length;
+        int min;
 
     public:
         //implicit constructor

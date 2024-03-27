@@ -41,6 +41,7 @@ void testCreate() {
 
 	SetIterator it = s.iterator(); //iterator on the empty set should be invalid from the start
 	assert(it.valid() == false);
+    // pune la valid ca length sa fie = 0, sa fie false
 }
 
 
@@ -294,6 +295,36 @@ void testQuantity() {//add lots of elements
 	assert(s.size() == 0);
 }
 
+void testDeleteCurrent(){
+    cout << "Test Delete Current" << endl;
+    Set s;
+
+    s.add(1);
+    s.add(2);
+    s.add(3);
+    s.add(4);
+    s.add(5);
+    s.add(6);
+
+    SetIterator i = s.iterator();
+
+    i.first();
+
+    assert(i.getCurrent() == 1);
+    i.next();
+    assert(i.getCurrent() == 2);
+    i.deleteCurrent();
+    assert(i.getCurrent() == 3);
+    i.next();
+    assert(i.getCurrent() == 4);
+    i.deleteCurrent();
+    assert(i.getCurrent() == 5);
+
+
+
+
+}
+
 
 // we don't know how the set is represented and in which order the elements are stored or printed, we can only test general thing
 void testAllExtended() {
@@ -303,6 +334,7 @@ void testAllExtended() {
 	testIterator();
 	testMix();
 	testQuantity();
+    testDeleteCurrent();
 
 }
 

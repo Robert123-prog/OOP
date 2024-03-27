@@ -1,3 +1,8 @@
+#include <string>
+#include <iostream>
+#include <vector>
+
+
 class Graph {
 private:
 
@@ -7,7 +12,7 @@ private:
     
 public:
 
-    Graph();
+    Graph(std::string filename);
 
     void addEdge(int x, int y);
 
@@ -26,5 +31,11 @@ public:
     int maxFromMatrix();
 
     int minFromMatrix();
+
+    std::vector<std::vector<int>>power(int n);
+
+    bool isConnected();
+
+    std::vector<std::vector<int>>sumOfPowers(int n);
 
 };

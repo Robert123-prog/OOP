@@ -6,7 +6,7 @@
 void testAll() { 
 	Set s;
 	assert(s.isEmpty() == true);
-	assert(s.size() == 0); 
+	assert(s.size() == 0);
 	assert(s.add(5)==true);
 	assert(s.add(1)==true);
 	assert(s.add(10)==true);
@@ -20,6 +20,7 @@ void testAll() {
 	assert(s.remove(1) == true);
 	assert(s.remove(6) == false);
 	assert(s.size() == 4);
+
 
 
 	SetIterator it = s.iterator();
