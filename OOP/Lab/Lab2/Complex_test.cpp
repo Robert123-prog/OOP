@@ -34,8 +34,8 @@ void testAllC() {
 
     //TEST divide
     Complex res4 = c1.divide(c2);
-    assert(res4.getReal() == double(47) / 65);
-    assert(res4.getImaginary() == double(1) / 65);
+    assert(res4.getReal() == 47 / 65);
+    assert(res4.getImaginary() == 1 / 65);
 
     //TEST absolute
     assert(c1.absolute() == sqrt(34));

@@ -3,4 +3,5 @@ project(Proiect_Colectiv)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Proiect_Colectiv main.cpp)
+add_executable(Proiect_Colectiv main.cpp
+        Proiect711-2/etc.cpp)
