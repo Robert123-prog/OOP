@@ -344,11 +344,39 @@ void testQuantity(){
     assert(list.isEmpty());
 }
 
+void testMofifyCurrent(){
+    cout << "Test Modify Current" << std::endl;
+
+    SortedIndexedList list = SortedIndexedList(asc);
+    ListIterator it = list.iterator();
+
+    list.add(1);
+    list.add(2);
+    list.add(4);
+    list.add(5);
+    it.first();
+    it.next();
+    assert(it.modifyCurrent(5) == false);
+    assert(it.modifyCurrent(3) == true);
+
+    it.first();
+    assert(it.modifyCurrent(5) == false);
+    assert(it.modifyCurrent(0) == true);
+
+    it.next();
+    it.next();
+    it.next();
+    assert(it.modifyCurrent(2) == false);
+    assert(it.modifyCurrent(10) == true);
+
+}
+
 void testAllExtended() {
 	testCreate();
 	testAddAndSearch();
 	testDeleteSearch();
     testQuantity();
+    testMofifyCurrent();
 }
 
 

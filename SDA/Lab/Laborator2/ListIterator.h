@@ -16,6 +16,7 @@ public:
 	void first();
 	void next();
 	bool valid() const;
+    bool modifyCurrent(TComp elem);
     TComp getCurrent() const;
 };
 
